@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Text Editor</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  This is my initial text editor
+  <div class="container">
+    <div class="editor">
+      <div class="editor-header">
+        <ul>
+          <li>
+            <button class="btn" id="bold"><b>G</b></button>
+          </li>
+          <li>
+            <button class="btn" id="italic"><i>I</i></button>
+          </li>
+          <li>
+            <button class="btn" id="underline"><u>S</u></button>
+          </li>
+          <li>
+            <button class="btn" id="link">Link</button>
+          </li>
+        </ul>
+      </div>
+      <div class="editor-body" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./js/command.js"></script>
 </body>
 </html>
