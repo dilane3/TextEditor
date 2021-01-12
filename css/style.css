@@ -13,14 +13,19 @@ body {
   justify-content: center;
 }
 
-.editor {
+.editor, .result {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   border-radius: 20px;
   border: 2px solid rgba(0, 0, 0, .4);
   box-shadow: 1px 4px 5px rgba(0, 0, 0, .4);
   background-color: white;
+}
+
+.result {
+  margin-left: 10px;
+  padding: 40px 20px;
 }
 
 .editor-header {
@@ -43,6 +48,13 @@ body {
   margin: 0 auto;
   padding: 30px 0;
   overflow: auto;
+}
+
+.editor-footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid rgba(0, 0, 0, .4);
 }
 
 li {
